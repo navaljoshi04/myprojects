@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project </title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+   body{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    margin: 0px;
+    padding:0px;
+    background: url('img/backgroung.jpg.jpg');
+    /* border:2px solid red; */
+    color:white
+   }
+   .left{
+    /* border:2px solid rgb(136, 88, 192); */
+    display:inline block;
+    position:absolute;
+    left:34px;
+    top:34px;
+   }
+   .navbar{
+    display:inline-block;
+   }
+   .navbar li{
+    display:inline-block;
+    font-size:22px;
+   }
+   .navbar li a{
+    color:white;
+    text-decoration: none;
+    padding:24px 23px;
+   }
+   .navbar li a:hover{
+    text-decoration:underline;
+    color:rgb(224, 29, 29);
+   }
+   .left img{
+    width:46;
+    filter:invert(100%);
+    position:absolute;/* this is function by which you can change black imag to white and vice versa*/
+   }
+   .container{
+    border:2px solid rgb(232, 240, 232);
+    margin: 85px 24px;
+    padding: 94px 19px;
+    width: 33%;
+    border-radius: 17px;
+   }
+   .left div{
+    text-align: center;
+    line-height: 1px;
+    font-size: 34px;
+    margin: -17px -25px;
+   }
+
+   .mid{
+    /* these are the three properties needed to be set if you have to put an elem to the center  */
+    display:block;
+    width:40%;
+    margin:34px auto;
+    /* border:2px solid rgb(59, 225, 172); */
+
+   }
+   .right{
+    /* border:2px solid rgb(216, 236, 98); */
+    position:absolute;
+    right:34px;
+    top:34px;
+    display:inline block;
+   }
+   .btn{
+    margin: 0px 9px;
+    border: 2px solid grey;
+    color:white;
+    background-color: black;
+    padding:4px 3px;
+    border-radius: 7px;
+    font-size: 15px;
+    cursor: pointer;
+    font-family:'Ubuntu', sans-serif;
+   }
+   .btn:hover{
+    color:rgb(212, 231, 67);
+   }
+   .formgroup{
+    display:block;
+    padding:9px 30px;
+   }
+   .formgroup input{
+    text-align: center;
+    display:block;
+    width:184px;
+    margin:12px auto;
+    font-family:'Ubuntu', sans-serif;
+   }
+   .container .btn{
+    display:block;
+    width:198px;
+    margin:auto;
+   }
+
+</style>
+
+<body>
+    <header class="header">
+    <div class="left">
+    <img src="img/dumbbell-35686-128x128.ico" alt="">
+    <div>Uttrakhandi Local Fitness </div>
+    </div> <!--div class left for logo and the my fitness name -->
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us </a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Fitness Logo </a></li>
+         </ul>
+    </div> <!--div class mid is for the navigation bar -->
+    <div class="right">
+        <button class="btn">Call us now </button>
+        <button class="btn">Email us  </button>
+    </div> <!--div class right is for the search box if we can add a search box here ,so this is how it is planned at the moment -->
+</header>
+<div class="container">
+    <h1>Join the best gym of ranikhet now </h1>
+    <form action="noaction.php">
+        <div class="formgroup">
+            <input type="text" name="" placeholder="enter your name">
+            <input type="text" name="" placeholder="enter your Gender">
+            <input type="number" name="" placeholder="enter your Contact number:">
+            <input type="text" name="" placeholder="enter your city">
+        </div>
+        <button class="btn">Submit</button>
+    </form>
+</div>
+</body>
+</html>
